@@ -8,7 +8,7 @@ import LastSlider1 from '../assets/img/LastSlider_img1.webp'
 import LastSlider2 from '../assets/img/LastSlider_img2.webp'
 import LastSlider3 from '../assets/img/LastSlider_img3.webp'
 import LastSlider4 from '../assets/img/lastSlider_img4.webp'
-import LastSlider5 from '../assets/img/LastSlider_img5.webp'
+import LastSlider5 from '../assets/img/LastSlider_img5.png'
 import LastSlider6 from '../assets/img/LastSlider_img6.webp'
 import LastSlider7 from '../assets/img/LastSlider_img7.webp'
 const Testimonial = () => {
