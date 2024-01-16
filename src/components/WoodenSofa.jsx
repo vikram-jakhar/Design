@@ -5,7 +5,7 @@ const WoodenSofa = () => {
         <>
             <div className='bg-[#F7F7F8] pt-[64px] relative z-[1] mb-6'>
                 <div className='max-w-[1320px] container px-3 mx-auto'>
-                    <div className="grid grid-cols-1 md:grid-cols-3">
+                    <div className="grid grid-cols-1 md:grid-cols-3 ">
                         <div className='col-span-1 px-3 pt-3'>
                             <div className='flex items-center gap-[7px]'>
                                 <div className="w-[95px] h-[0px] border border-[#000000]"></div>

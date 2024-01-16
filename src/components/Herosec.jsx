@@ -1,17 +1,22 @@
 import React, { useState } from 'react'
 import { Carthicon, Logo, Serchicon } from '../svgFile/svg'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import Commonbtn from './ComanBtn';
 
 const Herosec = () => {
+    let location = useLocation();
     const [first, setfirst] = useState(false);
     function MobView() {
         setfirst(!first);
         if (first === false) {
-            document.body.classList.add("overflow-hidden");
+            document.body.classList.add("max-lg:overflow-hidden");
         } else {
-            document.body.classList.remove("overflow-hidden");
+            document.body.classList.remove("max-lg:overflow-hidden");
         }
+    }
+    function closeNav(){
+        setfirst(false)
+        document.body.classList.remove("max-lg:overflow-hidden")
     }
     return (
         <>
@@ -23,12 +28,12 @@ const Herosec = () => {
                             <h2 className='text-[18px] sm:text-[33.023px] text-white font-roboto font-bold'>FURNITURE</h2>
                         </div>
                         <div className={` flex gap-[17px] sm:gap-[40px] items-center `}>
-                            <div className={`${first ? "left-0" : "left-[-100%]"} mobileview duration-300 flex gap-[55px]`}>
-                                <Link className='text-white font-roboto transition after:duration-500 after:w-0 hover:after:w-full after:absolute relative after:left-0 after:right-0 after:bottom-0 py-2.5 after:h-[2px] after:rounded-full after:bg-[#BD7D41]  text-[18px] font-normal'>HOME</Link>
-                                <Link className='text-white font-roboto transition after:duration-500 after:w-0 hover:after:w-full after:absolute relative after:left-0 after:right-0 after:bottom-0 py-2.5 after:h-[2px] after:rounded-full after:bg-[#BD7D41]  text-[18px] font-normal'>ABOUT US</Link>
-                                <Link className='text-white font-roboto  transition after:duration-500 after:w-0 hover:after:w-full after:absolute relative after:left-0 after:right-0 after:bottom-0 py-2.5 after:h-[2px] after:rounded-full after:bg-[#BD7D41] text-[18px] font-normal'>SHOP</Link>
-                                <Link className='text-white font-roboto transition after:duration-500 after:w-0 hover:after:w-full after:absolute relative after:left-0 after:right-0 after:bottom-0 py-2.5 after:h-[2px] after:rounded-full after:bg-[#BD7D41]  text-[18px] font-normal'>CONTACT US</Link>
-                            </div>
+                            <ul className={`${first ? "left-0" : "left-[-100%]"} mobileview duration-300 flex gap-[55px]`}>
+                                <li><Link onClick={closeNav} to="/" className={`${location.pathname === "/" && " !font-bold relative after:absolute after:w-full after:duration-300 after:h-[3px] after:bg-[#BD7D41] after:-bottom-4 after:left-0"} text-white text-lg font-normal font-roboto`}>HOME</Link></li>
+                                <li><Link onClick={closeNav} to="/about" className={`${location.pathname === "/about" && " !font-bold relative after:absolute after:w-full after:duration-300 after:h-[3px] after:bg-[#BD7D41] after:-bottom-4 after:left-0"} text-white text-lg font-normal font-roboto`}>About Us</Link></li>
+                                <li><Link onClick={closeNav} to="/shop" className={`${location.pathname === "/shop" && " !font-bold relative after:absolute after:w-full after:duration-300 after:h-[3px] after:bg-[#BD7D41] after:-bottom-4 after:left-0"} text-white text-lg font-normal font-roboto`}>Shop</Link></li>
+                                <li><Link onClick={closeNav} to="/contact" className={`${location.pathname === "/contact" && " !font-bold relative after:absolute after:w-full after:duration-300 after:h-[3px] after:bg-[#BD7D41] after:-bottom-4 after:left-0"} text-white text-lg font-normal font-roboto`}>Contact Us</Link></li>
+                            </ul>
                             <div className='flex items-center gap-[16px] sm:gap-[28.29px]'>
                                 <Serchicon />
                                 <Carthicon />
@@ -58,10 +63,10 @@ const Herosec = () => {
 
                     </div>
 
-                </div>
+                </div >
 
 
-            </div>
+            </div >
 
 
 

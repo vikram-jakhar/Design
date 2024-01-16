@@ -134,8 +134,8 @@ const SingleSofa = () => {
     ]
   };
   return (
-    <div className="bg-[#2D39490A] max-lg:max-w-[1320px] max-lg:mx-auto max-lg:px-3 pt-7 md:pt-9 lg:pt-[70px] min-[1280px]:mt-[300px] pb-5 sm:pb-7 md:pb-12 lg:pb-[98px] relative overflow-x-clip">
-      <div className="max-w-[741px] max-h-[417px] h-full max-xl:hidden bg-gradient-to-t from-gray-300 to-gray-800 w-full absolute right-0 top-[-42%] "></div>
+    <div className="bg-[#2D39490A] max-lg:max-w-[1320px] max-lg:mx-auto max-lg:px-3 pt-7 md:pt-9 lg:pt-[68px] min-[1280px]:mt-[266px] pb-5 sm:pb-7 md:pb-12 lg:pb-[96px] relative overflow-x-clip">
+      <div className="max-w-[741px] max-h-[417px] h-full max-xl:hidden bg-gradient-to-t from-gray-300 to-gray-800 w-full absolute right-0 translate-y-[-153px]"></div>
       <div className="flex flex-wrap flex-row -mx-3">
         <div className="w-5/12 max-lg:w-full px-3 flex justify-center">
           <div>

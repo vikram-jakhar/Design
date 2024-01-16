@@ -14,8 +14,6 @@ import Loder from '../components/Loder'
 const Homepages = () => {
   return (
     <div>
-     <Loder/>   
-    <Herosec/>
     <Product/>
     <SingleSofa/>
     <SopingStore/>
@@ -23,7 +21,6 @@ const Homepages = () => {
     <LatestDeal/>
     <FestivalOffer/>
     <Testimonial/>
-    <Footer/>
     <BackToTop/>
 
     </div>

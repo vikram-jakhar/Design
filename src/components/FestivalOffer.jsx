@@ -6,7 +6,7 @@ const FestivalOffer = () => {
     return (
         <>
             <div className='max-w-[1341px] mx-auto px-3'>
-                <div className='grid  lg:grid-cols-2 justify-center  sm:mt-28'>
+                <div className='grid  lg:grid-cols-2 justify-center mt-10  sm:mt-12'>
                     <div className='col-span-1 px-3 mb-5'>
                         <div className=' !relative overflow-hidden'>
                             <img src={Black_Kursi} alt="Black_Kursi" />

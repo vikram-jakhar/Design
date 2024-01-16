@@ -26,6 +26,15 @@
     color: #03a9f4;
     animation: animate 4s ease-in-out infinite;
   }
+  .swiper-slide-active{
+    display: flex !important;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-wrapper{
+    align-items: center;
+}
 
 @media (max-width:1023px) {
     .mobileview {
