@@ -35,6 +35,23 @@
 .swiper-wrapper{
     align-items: center;
 }
+.search-enter {
+  opacity: 0.01;
+}
+
+.search-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.search-exit {
+  opacity: 1;
+}
+
+.search-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
 
 @media (max-width:1023px) {
     .mobileview {

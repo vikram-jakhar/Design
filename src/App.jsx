@@ -7,6 +7,7 @@ import About from "./Pages/About"
 import Shop from "./Pages/Shop"
 import Contact from "./Pages/Contact"
 import Loder from "./components/Loder"
+import BackToTop from "./components/BackToTop"
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <BackToTop/>
       <Footer />
     </div>
   )

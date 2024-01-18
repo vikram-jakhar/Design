@@ -21,8 +21,6 @@ const Homepages = () => {
     <LatestDeal/>
     <FestivalOffer/>
     <Testimonial/>
-    <BackToTop/>
-
     </div>
   )
 }

@@ -59,8 +59,8 @@ const Crddata = crd.map((crd) => (
 const SopingStore = () => {
     return (
         <div className=' pt-[135px] overflow-hidden'>
-            <div className=' max-w-[1320px] mx-auto px-3 pb-14 md:pb-[144px]'>
-                <div className='flex items-center gap-[11px] pb-[19px]'>
+            <div className=' max-w-[1320px] mx-auto px-3 pb-14 lg:pb-[144px]'>
+                <div className='flex items-center gap-[11px] pb-[19px] '>
                     <span className=' w-[70px] sm:w-[95px] h-[1px] bg-black' />
                     <p className=' text-[#BD7D41] font-normal text-[14px] sm:text-xl'>Shopping Store</p>
                 </div>
