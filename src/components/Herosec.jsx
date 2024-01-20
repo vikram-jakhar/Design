@@ -51,7 +51,7 @@ const Herosec = () => {
                                             <span className="flex bg-white group-hover:bg-[#BD7D41] absolute -left-3 duration-500 -rotate-45 h-[2px] w-5 mb-1"></span>
                                         </div>) : (<Serchicon />)}
                                     </span>
-                                    <input type='text' placeholder='  Sarch.....' className={`transition-all  ease-in duration-300 rounded max-sm:hidden ${isSearchOpen ? "w-[120px]" : "w-[0]"}`} />
+                                    <input type='text' placeholder=' namaste 🙏 just ' className={`transition-all  ease-in duration-300 rounded max-sm:hidden ${isSearchOpen ? "w-[120px]" : "w-[0]"}`} />
                                 </div>
                                 <Carthicon />
                             </div>
@@ -72,7 +72,7 @@ const Herosec = () => {
                         </div>
                     </nav>
                     <div className='flex justify-center items-center'>
-                        <input type='text' placeholder='  Sarch.....' className={` transition-all ease-in duration-500 rounded max-sm:block sm:hidden ${isSearchOpen ? "w-[220px]" : "w-[0] "}`} />
+                        <input type='text' placeholder='namaste 🙏 just ' className={` transition-all ease-in duration-500 rounded max-sm:block sm:hidden ${isSearchOpen ? "w-[220px]" : "w-[0] "}`} />
 
                     </div>
                     <div className='text-center'>
